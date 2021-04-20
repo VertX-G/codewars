@@ -2,7 +2,7 @@
 # Return a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
 
 # my first solution
-def namelist(names):       
+def mynamelist(names):       
     number_of_names = len(names)
     list_of_names = ''
     i = 0
@@ -19,7 +19,7 @@ def namelist(names):
 
 
 # ideal solution
-def namelist(names):
+def idealnamelist(names):
     if len(names) > 1:
         return '{} & {}'.format(', '.join(name['name'] for name in names[:-1]), 
                                 names[-1]['name'])
