@@ -20,7 +20,7 @@ def mynamelist(names):
     return(list_of_names)
 
 
-# ideal solution
+# Community selected solution
 def idealnamelist(names):
     if len(names) > 1:
         return '{} & {}'.format(', '.join(name['name'] for name in names[:-1]), 
