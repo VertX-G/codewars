@@ -14,7 +14,6 @@ Note: n and p will always be given as strictly positive integers.
 */
 
 // My solution
-
 using System;
 using System.Collections.Generic;
 
@@ -49,4 +48,15 @@ public class DigPow {
             return -1;
         }
     }
+}
+
+// Community selected solution
+using System.Linq;
+using System;
+
+public class DigPow {
+  public static long digPow(int n, int p) {
+    var sum = Convert.ToInt64(n.ToString().Select(s => Math.Pow(int.Parse(s.ToString()), p++)).Sum());
+    return sum % n == 0 ? sum / n : -1;
+  }
 }
