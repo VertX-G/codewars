@@ -19,34 +19,34 @@ using System;
 using System.Collections.Generic;
 
 public class DigPow {
-	public static long digPow(int n, int p) {
+    public static long digPow(int n, int p) {
 		
-    long newN = n;
-    List<long> digits = new List<long>();
-    int count = 0;
-    long sum = 0;
+        long newN = n;
+        List<int> digits = new List<int>();
+        int count = 0;
+        long sum = 0;
     
-    do
-    {
-      digits.Add(newN % 10);
-    }
-    while ((newN /= 10L) != 0L);
+        do
+        {
+            digits.Add(Convert.ToInt(newN % 10));
+        }
+        while ((newN /= 10L) != 0L);
     
-    digits.Reverse();
+        digits.Reverse();
     
-    foreach(int digit in digits)
-    {
-      sum += Convert.ToInt64(Math.Pow(digit,p+count));      
-      count++;
-    }
+        foreach(int digit in digits)
+        {
+            sum += Convert.ToInt64(Math.Pow(digit,p+count));      
+            count++;
+        }
 
-    if (sum % n == 0)
-    {
-      return(sum / n);
+        if (sum % n == 0)
+        {
+            return(sum / n);
+        }
+        else
+        {
+            return -1;
+        }
     }
-    else
-    {
-      return -1;
-    }
-	}
 }
