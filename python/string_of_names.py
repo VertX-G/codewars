@@ -3,7 +3,7 @@
 # Given an array containing hashes of names
 # Return a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
 
-# my first solution
+# -------------------- My first solution --------------------
 def mynamelist(names):       
     number_of_names = len(names)
     list_of_names = ''
@@ -20,7 +20,7 @@ def mynamelist(names):
     return(list_of_names)
 
 
-# Voted best solution
+# -------------------- Voted best solution --------------------
 def idealnamelist(names):
     if len(names) > 1:
         return '{} & {}'.format(', '.join(name['name'] for name in names[:-1]), 
