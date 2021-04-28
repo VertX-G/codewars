@@ -13,7 +13,7 @@ If it is the case we will return k, if not return -1.
 Note: n and p will always be given as strictly positive integers.
 */
 
-// My first solution
+/* -------------------- My first solution -------------------- */
 using System;
 using System.Collections.Generic;
 
@@ -50,7 +50,7 @@ public class DigPow {
     }
 }
 
-// Voted best solution
+/* -------------------- Voted best solution -------------------- */
 using System.Linq;
 using System;
 
