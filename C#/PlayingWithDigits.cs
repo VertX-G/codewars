@@ -50,7 +50,7 @@ public class DigPow {
     }
 }
 
-// Community selected solution
+// Voted best solution
 using System.Linq;
 using System;
 
