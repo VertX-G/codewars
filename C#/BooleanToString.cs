@@ -2,7 +2,7 @@
 Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
 */
 
-// My solution
+/* -------------------- My solution -------------------- */
 
 using System;
 using System.Linq;
@@ -21,7 +21,7 @@ public static class MyKata
 }
 
 
-// Voted best solution
+/* -------------------- Voted best solution -------------------- */
 
 public static class BestKata
 {
